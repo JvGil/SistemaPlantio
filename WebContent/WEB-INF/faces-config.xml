@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+	<!-- REGRAS DE MAPEAMENTO DE CLASSE BACKEND -->
+	<managed-bean>
+		<managed-bean-name>funcionarioBacking</managed-bean-name>
+		<managed-bean-class>br.com.joao.sistema.backingbean.FuncionarioBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>fazendaBacking</managed-bean-name>
+		<managed-bean-class>br.com.joao.sistema.backingbean.FazendaBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>insumoBacking</managed-bean-name>
+		<managed-bean-class>br.com.joao.sistema.backingbean.InsumoBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>relatorioBacking</managed-bean-name>
+		<managed-bean-class>br.com.joao.sistema.backingbean.RelatorioBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>calculadoraBacking</managed-bean-name>
+		<managed-bean-class>br.com.joao.sistema.backingbean.CalculadoraBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>plantioBacking</managed-bean-name>
+		<managed-bean-class>br.com.joao.sistema.backingbean.PlantioBacking</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<!-- REGRAS DE NAVEGAÇÃO DE FUNCIONÁRIO -->
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{funcionarioBacking.voltaMenu}</from-action>
+			<to-view-id>/index.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{funcionarioBacking.cadastraFuncionario}</from-action>
+			<to-view-id>/cadastrarFuncionario.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{funcionarioBacking.consultaFuncionario}</from-action>
+			<to-view-id>/consultarFuncionario.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{funcionarioBacking.alteraFuncionario}</from-action>
+			<to-view-id>/alterarFuncionario.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{relatorioBacking.relatorioFuncionario}</from-action>
+			<to-view-id>/relatorioFuncionario.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{funcionarioBacking.geraExcel}</from-action>
+			<to-view-id>/relatorioExcel.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- REGRAS DE NAVEGAÇÃO DE FAZENDA -->
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{fazendaBacking.voltaMenu}</from-action>
+			<to-view-id>/index.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{fazendaBacking.cadastraFazenda}</from-action>
+			<to-view-id>/cadastrarFazenda.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{fazendaBacking.consultaFazenda}</from-action>
+			<to-view-id>/consultarFazenda.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{fazendaBacking.alteraFazenda}</from-action>
+			<to-view-id>/alterarFazenda.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{relatorioBacking.relatorioFazenda}</from-action>
+			<to-view-id>/relatorioFazenda.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{fazendaBacking.geraExcel}</from-action>
+			<to-view-id>/relatorioExcel.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- REGRAS DE NAVEGAÇÃO DE INSUMO -->
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{insumoBacking.voltaMenu}</from-action>
+			<to-view-id>/index.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{insumoBacking.cadastraInsumo}</from-action>
+			<to-view-id>/cadastrarInsumo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{insumoBacking.consultaInsumo}</from-action>
+			<to-view-id>/consultarInsumo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{insumoBacking.alteraInsumo}</from-action>
+			<to-view-id>/alterarInsumo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{relatorioBacking.relatorioInsumo}</from-action>
+			<to-view-id>/relatorioInsumo.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-action>#{insumoBacking.geraExcel}</from-action>
+			<to-view-id>/relatorioExcel.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- REGRAS DE NAVEGAÇÃO DE PLANTIO -->
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{plantioBacking.voltaMenu}</from-action>
+			<to-view-id>/index.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-action>#{plantioBacking.cadastraPlantio}</from-action>
+			<to-view-id>/cadastrarPlantio.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<!-- REGRAS DE NAVEGAÇÃO DE CALCULADORA -->
+	<navigation-rule>
+		<navigation-case>
+			<from-action>#{calculadoraBacking.voltaMenu}</from-action>
+			<to-view-id>/index.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-action>#{calculadoraBacking.fazCalculo}</from-action>
+			<to-view-id>/calcularLucro.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-action>#{calculadoraBacking.novoCalculo}</from-action>
+			<to-view-id>/calcularLucro.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+</faces-config>

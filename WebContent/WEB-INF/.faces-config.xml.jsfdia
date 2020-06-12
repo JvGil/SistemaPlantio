@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::0" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{funcionarioBacking.voltaMenu}:#index.jsp"
+    NAME="output" PATH="/index.jsp" TARGET="rules:#index.jsp"
+    TITLE="#{funcionarioBacking.voltaMenu}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{funcionarioBacking.cadastraFuncionario}:#cadastrarFuncionario.jsp"
+    NAME="output1" PATH="/cadastrarFuncionario.jsp"
+    TARGET="rules:#cadastrarFuncionario.jsp"
+    TITLE="#{funcionarioBacking.cadastraFuncionario}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{funcionarioBacking.consultaFuncionario}:#consultarFuncionario.jsp"
+    NAME="output2" PATH="/consultarFuncionario.jsp"
+    TARGET="rules:#consultarFuncionario.jsp"
+    TITLE="#{funcionarioBacking.consultaFuncionario}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{funcionarioBacking.alteraFuncionario}:#alterarFuncionario.jsp"
+    NAME="output3" PATH="/alterarFuncionario.jsp"
+    TARGET="rules:#alterarFuncionario.jsp"
+    TITLE="#{funcionarioBacking.alteraFuncionario}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{relatorioBacking.relatorioFuncionario}:#relatorioFuncionario.jsp"
+    NAME="output4" PATH="/relatorioFuncionario.jsp"
+    TARGET="rules:#relatorioFuncionario.jsp"
+    TITLE="#{relatorioBacking.relatorioFuncionario}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{funcionarioBacking.geraExcel}:#relatorioExcel.jsp"
+    NAME="output5" PATH="/relatorioExcel.jsp"
+    TARGET="rules:#relatorioExcel.jsp"
+    TITLE="#{funcionarioBacking.geraExcel}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cadastrarFuncionario.jsp"
+  PATH="/cadastrarFuncionario.jsp" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules::1" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::1" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{fazendaBacking.voltaMenu}:#index.jsp"
+    NAME="output" PATH="/index.jsp" TARGET="rules:#index.jsp"
+    TITLE="#{fazendaBacking.voltaMenu}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{fazendaBacking.cadastraFazenda}:#cadastrarFazenda.jsp"
+    NAME="output1" PATH="/cadastrarFazenda.jsp"
+    TARGET="rules:#cadastrarFazenda.jsp"
+    TITLE="#{fazendaBacking.cadastraFazenda}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{fazendaBacking.consultaFazenda}:#consultarFazenda.jsp"
+    NAME="output2" PATH="/consultarFazenda.jsp"
+    TARGET="rules:#consultarFazenda.jsp"
+    TITLE="#{fazendaBacking.consultaFazenda}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{fazendaBacking.alteraFazenda}:#alterarFazenda.jsp"
+    NAME="output3" PATH="/alterarFazenda.jsp"
+    TARGET="rules:#alterarFazenda.jsp"
+    TITLE="#{fazendaBacking.alteraFazenda}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{relatorioBacking.relatorioFazenda}:#relatorioFazenda.jsp"
+    NAME="output4" PATH="/relatorioFazenda.jsp"
+    TARGET="rules:#relatorioFazenda.jsp"
+    TITLE="#{relatorioBacking.relatorioFazenda}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{fazendaBacking.geraExcel}:#relatorioExcel.jsp" NAME="output5"
+    PATH="/relatorioExcel.jsp" TARGET="rules:#relatorioExcel.jsp"
+    TITLE="#{fazendaBacking.geraExcel}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#consultarFuncionario.jsp"
+  PATH="/consultarFuncionario.jsp" SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules::2" SHAPE="32,241,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::2" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{insumoBacking.voltaMenu}:#index.jsp"
+    NAME="output" PATH="/index.jsp" TARGET="rules:#index.jsp"
+    TITLE="#{insumoBacking.voltaMenu}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{insumoBacking.cadastraInsumo}:#cadastrarInsumo.jsp"
+    NAME="output1" PATH="/cadastrarInsumo.jsp"
+    TARGET="rules:#cadastrarInsumo.jsp"
+    TITLE="#{insumoBacking.cadastraInsumo}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{insumoBacking.consultaInsumo}:#consultarInsumo.jsp"
+    NAME="output2" PATH="/consultarInsumo.jsp"
+    TARGET="rules:#consultarInsumo.jsp"
+    TITLE="#{insumoBacking.consultaInsumo}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{insumoBacking.alteraInsumo}:#alterarInsumo.jsp"
+    NAME="output3" PATH="/alterarInsumo.jsp"
+    TARGET="rules:#alterarInsumo.jsp"
+    TITLE="#{insumoBacking.alteraInsumo}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{relatorioBacking.relatorioInsumo}:#relatorioInsumo.jsp"
+    NAME="output4" PATH="/relatorioInsumo.jsp"
+    TARGET="rules:#relatorioInsumo.jsp"
+    TITLE="#{relatorioBacking.relatorioInsumo}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{insumoBacking.geraExcel}:#relatorioExcel.jsp" NAME="output5"
+    PATH="/relatorioExcel.jsp" TARGET="rules:#relatorioExcel.jsp"
+    TITLE="#{insumoBacking.geraExcel}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#index.jsp" PATH="/index.jsp"
+  SHAPE="240,257,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#alterarFuncionario.jsp"
+  PATH="/alterarFuncionario.jsp" SHAPE="240,369,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#relatorioFuncionario.jsp"
+  PATH="/relatorioFuncionario.jsp" SHAPE="240,481,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#cadastrarFazenda.jsp"
+  PATH="/cadastrarFazenda.jsp" SHAPE="240,593,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#consultarFazenda.jsp"
+  PATH="/consultarFazenda.jsp" SHAPE="256,705,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#alterarFazenda.jsp"
+  PATH="/alterarFazenda.jsp" SHAPE="272,881,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#relatorioFazenda.jsp"
+  PATH="/relatorioFazenda.jsp" SHAPE="288,1025,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#relatorioExcel.jsp"
+  PATH="/relatorioExcel.jsp" SHAPE="304,1057,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#cadastrarInsumo.jsp"
+  PATH="/cadastrarInsumo.jsp" SHAPE="240,1441,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#consultarInsumo.jsp"
+  PATH="/consultarInsumo.jsp" SHAPE="304,1841,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#alterarInsumo.jsp" PATH="/alterarInsumo.jsp"
+  SHAPE="304,1873,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#relatorioInsumo.jsp"
+  PATH="/relatorioInsumo.jsp" SHAPE="304,1905,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules::3" SHAPE="32,833,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::3" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{plantioBacking.voltaMenu}:#index.jsp"
+    NAME="output" PATH="/index.jsp" TARGET="rules:#index.jsp"
+    TITLE="#{plantioBacking.voltaMenu}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{plantioBacking.cadastraPlantio}:#cadastrarPlantio.jsp"
+    NAME="output1" PATH="/cadastrarPlantio.jsp"
+    TARGET="rules:#cadastrarPlantio.jsp"
+    TITLE="#{plantioBacking.cadastraPlantio}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#calcularLucro.jsp" PATH="/calcularLucro.jsp"
+  SHAPE="240,2529,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules::4" SHAPE="32,833,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::4" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{calculadoraBacking.voltaMenu}:#index.jsp"
+    NAME="output" PATH="/index.jsp" TARGET="rules:#index.jsp"
+    TITLE="#{calculadoraBacking.voltaMenu}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{calculadoraBacking.fazCalculo}:#calcularLucro.jsp"
+    NAME="output1" PATH="/calcularLucro.jsp"
+    TARGET="rules:#calcularLucro.jsp"
+    TITLE="#{calculadoraBacking.fazCalculo}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{calculadoraBacking.novoCalculo}:#calcularLucro.jsp"
+    NAME="output2" PATH="/calcularLucro.jsp"
+    TARGET="rules:#calcularLucro.jsp"
+    TITLE="#{calculadoraBacking.novoCalculo}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cadastrarPlantio.jsp"
+  PATH="/cadastrarPlantio.jsp" SHAPE="240,3153,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

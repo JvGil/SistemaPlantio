@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Configurações da conexão -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sistema</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<!-- Dialeto utilizado -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- Criação/Utilização da base da dados -->
+		<property name="hbm2ddl.auto">validate</property>
+
+		<!-- Classes -->
+		<mapping class="br.com.joao.sistema.bean.Fazenda" />
+		<mapping class="br.com.joao.sistema.bean.Funcionario" />
+		<mapping class="br.com.joao.sistema.bean.Insumo" />
+		<mapping class="br.com.joao.sistema.bean.Plantio" />
+	</session-factory>
+</hibernate-configuration>

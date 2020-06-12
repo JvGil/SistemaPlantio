@@ -1,0 +1,146 @@
+@charset "ISO-8859-1";
+html {
+	background-color: #eefee9	;
+}
+
+.topbar{
+	background-color: blue;
+}
+
+/* body{
+	width: 900px;
+	margin: 0 auto;
+	background-color: #8080ff;
+	padding: 0 10px 10px 10px;
+	border: 3px solid #8694a8;
+} */
+.h1{
+	color: black;
+}
+.informacao{
+	color: #b70000;
+}
+.textFields{
+	width: 250px;
+}
+.textRadios{
+	color: black;
+}
+.labelNome{
+	color: black;
+	padding-right: 101px;
+}
+.labelLogradouro{
+	color: black;
+	padding-right: 64px;
+}
+.labelNumero{
+	color: black;
+	padding-right: 88px;
+}
+.labelBairro{
+	color: black;
+	padding-right: 99px;
+}
+.labelCidade{
+	color: black;
+	padding-right: 94px;
+}
+.labelEstado{
+	color: black;
+	padding-right: 96px;
+}
+.labelCep{
+	color: black;
+	padding-right: 113px;
+}
+.labelTelefone{
+	color: black;
+	padding-right: 83px;
+}
+.labelCpf{
+	color: black;
+	padding-right: 116px;
+}
+.labelRg{
+	color: black;
+	padding-right: 122px;
+}
+.labelSexo{
+	color: black;
+	padding-right: 177px;
+}
+.labelDataNascimento{
+	color: black;
+	padding-right: 35px;
+}
+.labelSalario{
+	color: black;
+	padding-right: 96px;
+}
+.labelComplemento{
+	color: black;
+	padding-right: 50px;
+}
+.labelCelular{
+	color: black;
+	padding-right: 94px;
+}
+.labelEmail{
+	color: black;
+	padding-right: 97px;
+}
+.labelAreaTotal{
+	color: black;
+	padding-right: 47px;
+}
+.labelTipo{
+	color: black;
+	padding-right: 107px;
+}
+.labelQuantidade{
+	color: black;
+	padding-right: 65px;
+}
+.labelValor{
+	color: black;
+	padding-right: 104px;
+}
+.labelQtdePlantas{
+	color: black;
+	padding-right: 10px;
+}
+.labelFrutos{
+	color: black;
+	padding-right: 82px;
+}
+.labelValorFrutos{
+	color: black;
+	padding-right: 95px;
+}
+.labelHectares{
+	color: black;
+	padding-right: 52px;
+}
+.labelLucro{
+	color: black;
+	padding-right: 80px;
+}
+.explicacao{
+	color: #a8a8a8;
+	text-align: left;
+	font-size: 15px;
+	padding-left: 60px;	
+	padding-right: 60px;	
+	padding-top: 5px;	
+	padding-bottom: 50px;	
+}
+.botaoCancelar{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.botaoGeral{
+	margin-top: 15px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
